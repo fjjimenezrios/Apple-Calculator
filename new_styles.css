@@ -1,0 +1,1309 @@
+/* CALCULATOR | IOS 26 */
+
+position: relative;
+width: 402px;
+height: 874px;
+
+background: #000000;
+border-radius: 62px;
+
+
+/* UI */
+
+position: absolute;
+width: 372px;
+height: 844.25px;
+left: 15px;
+top: 21.75px;
+
+
+
+/* System */
+
+position: absolute;
+width: 310.83px;
+height: 844.25px;
+left: 46px;
+top: 21.75px;
+
+
+
+/* Home Indicator */
+
+position: absolute;
+width: 144px;
+height: 5px;
+left: calc(50% - 144px/2 - 9.5px);
+bottom: 8px;
+
+background: #FFFFFF;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Time */
+
+position: absolute;
+width: 37px;
+height: 22px;
+left: 46px;
+top: 21.75px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 590;
+font-size: 17px;
+line-height: 22px;
+/* identical to box height, or 129% */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Wifi */
+
+position: absolute;
+width: 17.14px;
+height: 12.33px;
+left: 305.37px;
+top: 26.34px;
+
+background: #FFFFFF;
+
+
+/* Cellular Connection */
+
+position: absolute;
+width: 19.2px;
+height: 12.23px;
+left: 279.17px;
+top: 26.39px;
+
+background: #FFFFFF;
+
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px/2 + 141.01px);
+top: 3.2%;
+bottom: 95.77%;
+
+background: #FFFFFF;
+border-radius: 2.5px;
+
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px/2 + 155.17px);
+top: 3.49%;
+bottom: 96.04%;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px/2 + 141.01px);
+top: 2.97%;
+bottom: 95.54%;
+
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #FFFFFF;
+border-radius: 4.3px;
+
+
+/* 0-9 */
+
+position: absolute;
+width: 277px;
+height: 372px;
+left: 15px;
+top: 441px;
+
+
+
+/* Frame 34 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 110px;
+top: 726px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 0 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 31px;
+top: 33px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 22 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 205px;
+top: 441px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 9 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 30px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 21 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 110px;
+top: 441px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 8 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 31px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 5 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 15px;
+top: 441px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 7 */
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 32px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 31 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 205px;
+top: 536px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 6 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 30px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 30 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 110px;
+top: 536px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 5 */
+
+position: absolute;
+width: 23px;
+height: 22px;
+left: 31px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 23 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 15px;
+top: 536px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 4 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 31px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 33 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 205px;
+top: 631px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 3 */
+
+position: absolute;
+width: 24px;
+height: 22px;
+left: 31px;
+top: 33px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 32 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 110px;
+top: 631px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 2 */
+
+position: absolute;
+width: 23px;
+height: 22px;
+left: 31px;
+top: 33px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 24 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 15px;
+top: 631px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* 1 */
+
+position: absolute;
+width: 18px;
+height: 22px;
+left: 33px;
+top: 33px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* /// */
+
+position: absolute;
+width: 277px;
+height: 87px;
+left: 15px;
+top: 726px;
+
+
+
+/* Frame 25 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 15px;
+top: 726px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* Vector 7 */
+
+position: absolute;
+width: 27px;
+height: 27px;
+left: 27.21px;
+top: 28.63px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(169.31deg);
+
+
+/* + */
+
+position: absolute;
+width: 16px;
+height: 17px;
+left: 25px;
+top: 26px;
+
+font-family: 'SF Pro Rounded';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 22px;
+/* or 92% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #F8F8F8;
+
+
+
+/* - */
+
+position: absolute;
+width: 16px;
+height: 26px;
+left: 46px;
+top: 38px;
+
+font-family: 'SF Pro Rounded';
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 22px;
+/* or 59% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #F8F8F8;
+
+
+
+/* Frame 35 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 205px;
+top: 726px;
+
+background: #212121;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(50, 50, 50, 0.52);
+border-radius: 50px;
+
+
+/* . */
+
+position: absolute;
+width: 9px;
+height: 22px;
+left: 39px;
+top: 33px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* C */
+
+position: absolute;
+width: 277px;
+height: 87px;
+left: 15px;
+top: 346px;
+
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 15px;
+top: 346px;
+
+background: #5E5E5E;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(94, 94, 94, 0.47);
+border-radius: 50px;
+
+
+/* Group 1 */
+
+position: absolute;
+width: 36px;
+height: 29.5px;
+left: calc(50% - 36px/2 - 3.5px);
+top: 29px;
+
+
+
+/* Vector 1 */
+
+position: absolute;
+width: 11.5px;
+height: 11.5px;
+left: 38px;
+top: 38px;
+
+border: 3px solid #F8F8F8;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 11.5px;
+height: 11.5px;
+left: 38px;
+top: 38px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(-90deg);
+
+
+/* Vector 3 */
+
+position: absolute;
+width: 36px;
+height: 29.5px;
+left: 22px;
+top: 29px;
+
+border: 3px solid #F8F8F8;
+border-radius: 3px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 110px;
+top: 346px;
+
+background: #5E5E5E;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(94, 94, 94, 0.47);
+border-radius: 50px;
+
+
+/* C */
+
+position: absolute;
+width: 27px;
+height: 22px;
+left: 30px;
+top: 32px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 38px;
+line-height: 22px;
+/* identical to box height, or 58% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 3 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 205px;
+top: 346px;
+
+background: #5E5E5E;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(94, 94, 94, 0.47);
+border-radius: 50px;
+
+
+/* % */
+
+position: absolute;
+width: 38px;
+height: 22px;
+left: 24px;
+top: 33px;
+
+font-family: 'SF Pro Rounded';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 22px;
+/* identical to box height, or 46% */
+
+color: #F8F8F8;
+
+
+
+/* Frame 4 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 300px;
+top: 346px;
+
+background: #FF9201;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 146, 1, 0.41);
+border-radius: 50px;
+
+
+/* ÷ */
+
+position: absolute;
+width: 37px;
+height: 22px;
+left: 25px;
+top: 28px;
+
+font-family: 'SF Pro Rounded';
+font-style: normal;
+font-weight: 300;
+font-size: 62px;
+line-height: 22px;
+/* identical to box height, or 35% */
+text-align: center;
+
+color: #F8F8F8;
+
+
+
+/* Frame 26 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 300px;
+top: 441px;
+
+background: #FF9201;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 146, 1, 0.41);
+border-radius: 50px;
+
+
+/* Vector 2 */
+
+position: absolute;
+width: 21px;
+height: 21px;
+left: 31.5px;
+top: 33px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(-90deg);
+
+
+/* Vector 3 */
+
+position: absolute;
+width: 21px;
+height: 21px;
+left: 31.5px;
+top: 33px;
+
+border: 3px solid #F8F8F8;
+
+
+/* Frame 27 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 300px;
+top: 536px;
+
+background: #FF9201;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 146, 1, 0.41);
+border-radius: 50px;
+
+
+/* Vector 4 */
+
+position: absolute;
+width: 19.8px;
+height: 19.8px;
+left: 28px;
+top: 30px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(45deg);
+
+
+/* Frame 28 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 300px;
+top: 631px;
+
+background: #FF9201;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 146, 1, 0.41);
+border-radius: 50px;
+
+
+/* Vector 5 */
+
+position: absolute;
+width: 19.8px;
+height: 19.8px;
+left: 28px;
+top: 30px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(45deg);
+
+
+/* Vector 6 */
+
+position: absolute;
+width: 19.8px;
+height: 19.8px;
+left: 28px;
+top: 30px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(135deg);
+
+
+/* Frame 29 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 300px;
+top: 726px;
+
+background: #FF9201;
+border-radius: 50px;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 87px;
+height: 87px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 146, 1, 0.41);
+border-radius: 50px;
+
+
+/* Vector 7 */
+
+position: absolute;
+width: 16.26px;
+height: 16.26px;
+left: 30.5px;
+top: 27px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(-135deg);
+
+
+/* Vector 8 */
+
+position: absolute;
+width: 16.26px;
+height: 16.26px;
+left: 30.5px;
+top: 38px;
+
+border: 3px solid #F8F8F8;
+transform: rotate(-135deg);
+
+
+/* Icons */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 341px;
+top: 47px;
+
+background: rgba(94, 94, 94, 0.11);
+border-radius: 50px;
+
+
+/* ICONS */
+
+position: absolute;
+width: 15px;
+height: 22px;
+left: 14px;
+top: 10px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 15px;
+height: 22px;
+left: 14px;
+top: 10px;
+
+background: #FFFFFF;
+border-radius: 3px;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 11px;
+height: 5px;
+left: 16px;
+top: 12px;
+
+background: #111112;
+border-radius: 1px;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 16px;
+top: 19px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 16px;
+top: 23px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 16px;
+top: 27px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 20px;
+top: 19px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 20px;
+top: 23px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 20px;
+top: 27px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 24px;
+top: 19px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 24px;
+top: 23px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 3px;
+height: 3px;
+left: 24px;
+top: 27px;
+
+background: #111112;
+border-radius: 3px;
+
+
+/* Icons */
+
+position: absolute;
+width: 43px;
+height: 43px;
+left: 18px;
+top: 47px;
+
+background: rgba(94, 94, 94, 0.17);
+border-radius: 50px;
+
+
+/* Rectangle 10 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 10.5px;
+top: 10.5px;
+
+border: 2px solid #F1F1F1;
+border-radius: 50px;
+
+
+/* Vector 9 */
+
+position: absolute;
+width: 6px;
+height: 7.5px;
+left: 16px;
+top: 15.5px;
+
+border: 1.5px solid #F1F1F1;
+border-radius: 1px;
+
+
+/* 525x10 */
+
+position: absolute;
+width: 232px;
+height: 49px;
+left: 155px;
+top: 273px;
+
+font-family: 'SF Pro';
+font-style: normal;
+font-weight: 510;
+font-size: 69px;
+line-height: 22px;
+/* or 32% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: right;
+
+color: #FBFBFB;
+

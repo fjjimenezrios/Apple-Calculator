@@ -1,0 +1,289 @@
+/* Tokens desde diseño Figma «iOS 26» (new_styles.css) */
+
+:root {
+  --bg: #000000;
+  --orange: #ff9201;
+  --orange-inset: rgba(255, 146, 1, 0.41);
+  --key-num: #212121;
+  --key-num-inset: rgba(50, 50, 50, 0.52);
+  --key-top: #5e5e5e;
+  --key-top-inset: rgba(94, 94, 94, 0.47);
+  --text-key: #f8f8f8;
+  --text-display: #fbfbfb;
+  --text-expression: #8e8e93;
+  --frame-radius: 62px;
+  --frame-max-w: 402px;
+  --key-gap-design: 8px;
+  --key-size-ref: 87px;
+  --home-indicator-w: 144px;
+  --home-indicator-h: 5px;
+  --glass-blur: 18px;
+  /* Aro fino tipo cristal en teclas (sutil, como referencia iOS) */
+  --key-glass-outline: rgba(255, 255, 255, 0.14);
+  /* Iconos top: un pelín más marcado sobre el blur */
+  --nav-glass-outline: rgba(255, 255, 255, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.phone {
+  --key-gap: max(6px, min(2.1vw, var(--key-gap-design)));
+  width: 100%;
+  max-width: var(--frame-max-w);
+  margin-inline: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--bg);
+  padding-top: max(6px, env(safe-area-inset-top, 0px));
+  /* Móvil: más aire bajo el teclado + respeto al home indicator */
+  padding-bottom: max(28px, calc(env(safe-area-inset-bottom, 0px) + 18px));
+  padding-left: max(15px, env(safe-area-inset-left, 0px));
+  padding-right: max(15px, env(safe-area-inset-right, 0px));
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0 12px;
+}
+
+.top-icon-btn {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 1px solid var(--nav-glass-outline);
+  color: var(--text-key);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  isolation: isolate;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22),
+    0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.top-icon-btn:first-child {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(94, 94, 94, 0.28) 55%,
+    rgba(60, 60, 60, 0.35) 100%
+  );
+}
+
+.top-icon-btn:last-child {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(94, 94, 94, 0.18) 55%,
+    rgba(50, 50, 50, 0.28) 100%
+  );
+}
+
+.top-icon-btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+.top-icon-btn:active {
+  filter: brightness(1.12);
+}
+
+.calculator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.display-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 0 0 min(18px, 3.5vh);
+  min-height: min(110px, 16vh);
+}
+
+.expression {
+  color: var(--text-expression);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  word-break: break-all;
+  min-height: 0;
+}
+
+.expression:empty {
+  display: none;
+}
+
+.display {
+  color: var(--text-display);
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(3.25rem, min(17.2vw, 12vh), 4.3125rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: right;
+  transition: font-size 0.18s ease-out;
+}
+
+.display.display--no-transition {
+  transition: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--key-gap);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.buttons > button {
+  border: 1px solid var(--key-glass-outline);
+}
+
+button {
+  /* ~38px en tecla ~87px (ratio Figma) */
+  font-size: clamp(1.85rem, 9.2vw, 2.375rem);
+  font-weight: 500;
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  transition: filter 0.1s ease, transform 0.06s ease;
+  color: var(--text-key);
+}
+
+button:active {
+  filter: brightness(1.1);
+  transform: scale(0.97);
+}
+
+.number,
+.decimal {
+  background-color: var(--key-num);
+  box-shadow:
+    inset 0 0 0 999px var(--key-num-inset),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+
+.btn-top {
+  background-color: var(--key-top);
+  box-shadow:
+    inset 0 0 0 999px var(--key-top-inset),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11);
+  font-weight: 500;
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  box-shadow:
+    inset 0 0 0 999px var(--orange-inset),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  /* Sin texto: evita nodos de espacio que descentran el flex */
+  font-size: 0;
+  line-height: 0;
+}
+
+.btn-orange .op-icon {
+  display: block;
+  flex-shrink: 0;
+  width: clamp(2.1rem, 11vw, 2.95rem);
+  height: clamp(2.1rem, 11vw, 2.95rem);
+  color: var(--text-key);
+}
+
+.btn-orange:active,
+.btn-top:active,
+.number:active,
+.decimal:active {
+  filter: brightness(0.92);
+}
+
+#backspace {
+  color: var(--text-key);
+}
+
+.backspace-icon {
+  display: block;
+  width: min(36px, 54%);
+  height: auto;
+  aspect-ratio: 35 / 27;
+}
+
+@media (max-width: 479px) {
+  .phone {
+    max-width: none;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    align-items: center;
+  }
+
+  .phone {
+    --key-gap: var(--key-gap-design);
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    max-width: var(--frame-max-w);
+    border-radius: var(--frame-radius);
+    box-shadow: 0 0 0 3px #1a1a1a, 0 28px 90px rgba(0, 0, 0, 0.72);
+    margin: 16px;
+    padding: 22px 15px 10px;
+    max-height: min(900px, 100dvh - 32px);
+  }
+
+  .phone::after {
+    content: "";
+    display: block;
+    width: min(var(--home-indicator-w), 46%);
+    height: var(--home-indicator-h);
+    margin: 10px auto 6px;
+    background: #ffffff;
+    border-radius: 100px;
+    opacity: 0.35;
+    flex-shrink: 0;
+  }
+}

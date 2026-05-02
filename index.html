@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <div class="phone">
+      <nav class="top-nav" aria-label="Accesos">
+        <button type="button" class="top-icon-btn" aria-label="Historial">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7.25" stroke="currentColor" stroke-width="1.35" />
+            <path
+              d="M11 7.25v3.75l2.5 1.5"
+              stroke="currentColor"
+              stroke-width="1.35"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button type="button" class="top-icon-btn" aria-label="Calculadora científica">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="5" height="5" rx="1" fill="currentColor" />
+            <rect x="12.5" y="4" width="5" height="5" rx="1" fill="currentColor" />
+            <rect x="4" y="12.5" width="5" height="5" rx="1" fill="currentColor" />
+            <rect x="12.5" y="12.5" width="5" height="5" rx="1" fill="currentColor" />
+          </svg>
+        </button>
+      </nav>
+
+      <div class="calculator">
+        <div class="display-stack">
+          <div class="expression" id="expression" aria-live="polite"></div>
+          <div class="display" id="display">0</div>
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="btn-top" id="backspace" aria-label="Borrar">
+            <svg class="backspace-icon" viewBox="-0.5 -0.5 35 27" fill="none" aria-hidden="true">
+              <path
+                d="M11 3.5H28A2.5 2.5 0 0130.5 6v14A2.5 2.5 0 0128 22.5H11L3.5 13 11 3.5z"
+                stroke="currentColor"
+                stroke-width="2.75"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15.25 9.25L21.75 15.75M21.75 9.25L15.25 15.75"
+                stroke="currentColor"
+                stroke-width="2.75"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <button type="button" class="btn-top" id="clear">AC</button>
+          <button type="button" class="btn-top" id="percent">%</button>
+          <button type="button" class="btn-orange operator" data-operator="/" aria-label="Dividir">
+            <svg class="op-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="7" r="1.45" fill="currentColor" />
+              <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+              <circle cx="12" cy="17" r="1.45" fill="currentColor" />
+            </svg>
+          </button>
+
+          <button type="button" class="number" data-number="7">7</button>
+          <button type="button" class="number" data-number="8">8</button>
+          <button type="button" class="number" data-number="9">9</button>
+          <button type="button" class="btn-orange operator" data-operator="*" aria-label="Multiplicar">
+            <svg class="op-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7.5 7.5l9 9M16.5 7.5l-9 9" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <button type="button" class="number" data-number="4">4</button>
+          <button type="button" class="number" data-number="5">5</button>
+          <button type="button" class="number" data-number="6">6</button>
+          <button type="button" class="btn-orange operator" data-operator="-" aria-label="Restar">
+            <svg class="op-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <button type="button" class="number" data-number="1">1</button>
+          <button type="button" class="number" data-number="2">2</button>
+          <button type="button" class="number" data-number="3">3</button>
+          <button type="button" class="btn-orange operator" data-operator="+" aria-label="Sumar">
+            <svg class="op-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <line x1="12" y1="6" x2="12" y2="18" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+              <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <button type="button" class="number" id="plus-minus">+/-</button>
+          <button type="button" class="number" data-number="0">0</button>
+          <button type="button" class="number decimal" data-decimal=",">,</button>
+          <button type="button" class="btn-orange" id="equals" aria-label="Igual">
+            <svg class="op-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <line x1="6" y1="8" x2="18" y2="8" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+              <line x1="6" y1="16" x2="18" y2="16" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="magic.js"></script>
+  </body>
+</html>
